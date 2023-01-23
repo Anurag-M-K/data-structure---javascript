@@ -38,6 +38,65 @@ class BinarySearchTree{
             }
         }
     }
+
+    bstFind(value){
+        if(this.root === null) return false;
+        var current = this.root;
+        var found = false;
+
+        while(current && !found){
+            if(value < current.value){
+                current = current.left
+            }else if(value > current.value){
+                current = current.right
+
+            }else {
+                found = true
+            }
+        }if(!found) return undefined;
+return current;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ BSTFind(){
+    if(this.root === null) return false;
+    var current = this.root,
+ found = false;
+ while(current && !found){
+    if(value < current.value){
+        current = current.left
+
+    }else if (value > current.value){
+        current = current.right
+    }else{
+        found = true;
+    }
+ }if(!found) return undefined;
+ return current
+ }
+
+
+ 
     BFS(){
         var node = this.root,
         data = [];
@@ -52,16 +111,7 @@ class BinarySearchTree{
         return data;
     }
 
-    BFSpreOrder(){
-        var data = [];
-        function traverse(node){
-            data.push(node.value);
-            if(node.left) traverse(node.left);
-            if(node.right) traverse(node.right);
-        }
-        traverse(this.root);
-        return data;
-    }
+
 
     DFSPreOrder(){
         var data = [];

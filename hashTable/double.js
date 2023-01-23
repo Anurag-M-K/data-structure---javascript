@@ -75,7 +75,9 @@ class DoubleHashTable {
   }
   
   let ht = new DoubleHashTable();
-  ht.set("hello", "world");
+  ht.set(1, 2);
   ht.set("hi", "there");
   console.log(ht.keyMap); // [[["hello", "world"]], [["hi", "there"]]]
   console.log(ht.get("hello")); // "world"
+
+  
