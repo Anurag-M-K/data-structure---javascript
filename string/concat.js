@@ -1,6 +1,6 @@
 function concat(a,b){
     for(let i=0;i<b.length;i++){
-        a += b[i] 
+        a += b[i]
     }
     return a;
 }

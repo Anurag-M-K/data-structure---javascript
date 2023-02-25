@@ -38,3 +38,17 @@ DFSInorder steps
 -if the node has a right property call the helper function with the right property on the node
 -invoke the helper function with the current variable
 -return the array of values
+
+
+
+
+graph
+
+Remove a vertex
+
+- the function should accepts a vertex to remove 
+- the function should loop as long as there are any other vertices in the 
+  adjacencyList for that vertex
+- inside of the loop call our removeedge function with vertex we are removing 
+  and any values in the adjacency list for that vertex
+- delete the key in the adjacency list for that vertex

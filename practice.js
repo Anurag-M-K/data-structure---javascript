@@ -1,13 +1,20 @@
-function insertAt(arr,index,value){
-    for(var i =arr.length-1; i>=index; i--){
-        arr[i+1] = arr[i];      
-    }
+let myArray = [
+    { name: "John"},
+    { name: "Shobin" },
+  [ 
+   { name: "Shobin"},
+   ],
+  [ 
+   { name: "Shobin" },
+  ]
+  ]; 
 
-    arr[index] = value;
-    return arr;
-}
+
+
+  const first = myArray.flat()
+
+  const sum = first.filter((value)=>(value.name == "Shobin")).length
 
 
 
-var array = [1,2,3,4,56,8,8,8]
-console.log(insertAt(array,0,15))
+console.log("sum ",sum)

@@ -5,7 +5,7 @@ function toUpperCase(string){
         if(charCode >=97 && charCode <=122){
             charCode -= 32;
         }
-        result += String.fromCharCode(charCode);
+        result += String.fromCharCode(charCode);//which is used to convert code to string
     }
     return result;
 }

@@ -4,7 +4,7 @@ function stringToBinary(str){
         let charCode = str.charCodeAt(i);
         binary += charCode.toString(2)+ ' '
 
-    }
+    }   
     return binary;
 }
 console.log(stringToBinary("hello"))

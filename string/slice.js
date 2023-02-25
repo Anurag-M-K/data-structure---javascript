@@ -5,7 +5,7 @@ function slice(array, start, end) {
     }
     return result;
   }
-
+  
   let arr = [1, 2, 3, 4, 5]
   arr.slice( 1, 3); 
 
