@@ -52,3 +52,5 @@ Remove a vertex
 - inside of the loop call our removeedge function with vertex we are removing 
   and any values in the adjacency list for that vertex
 - delete the key in the adjacency list for that vertex
+
+
