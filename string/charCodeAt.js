@@ -2,4 +2,4 @@ function charCodeAt(string,index){
     return string.charCodeAt(index)
 }
 
-////   o(1)
+console.log(charCodeAt("hello",0    ))
