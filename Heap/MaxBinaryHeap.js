@@ -47,7 +47,7 @@ sinkdown(){
             rightChild = this.values[rightChildIdx]
             if(
                 (swap === null && rightChild > element) ||
-                (swap !== null && rightChild> leftChild)
+                (swap !== null && rightChild > leftChild)
             ){
                 swap = rightChildIdx;
             }
@@ -58,8 +58,6 @@ sinkdown(){
         idx = swap;
     }
 }
-
-
 }
 
 var heap = new MaxBinaryHeap()
@@ -70,3 +68,11 @@ heap.insert(18)
 heap.insert(27)
 heap.insert(12)
 heap.insert(55)
+
+
+
+
+
+  const arr = [5, 2, 7, 1, 9, 3];
+heapSort(arr);
+console.log(arr);    [arr[0], arr[i]] = [arr[i], arr[0]];

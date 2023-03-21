@@ -7,11 +7,11 @@ function bellmanFord(graph, start){
     for(let vertex in graph){
         distance[vertex] = Infinity;
     }
-    distance[vertex] = 0;
+    distance[start] = 0;
 
     //relax edges repeatedly;
 
-    for(let i = 0; i < Object.keys(graph).legth - 1; i++){
+    for(let i = 0; i < Object.keys(graph).length - 1; i++){
         for(let u in graph ){
             for(let v in graph[u]){
                 const weight = graph[u][v];
@@ -26,7 +26,7 @@ function bellmanFord(graph, start){
     for(let u in graph ){
         for(let v in graph[u]){
             const weight = graph[u][v];
-            if(distance[u] + weight < distance[v]){
+            if(distance[u] + weight < distance[v] && distance[u] != Infinity){
                 throw new Error("Graph containn a negetive weight cycle")
             }
         }

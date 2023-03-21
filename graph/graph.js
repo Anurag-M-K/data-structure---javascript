@@ -6,10 +6,12 @@ class Graph{
         if(!this.adjacencyList[vertex]) this.adjacencyList[vertex] = []
 
     }
+    //adding a undirected edge between two vertices
     addEdge(v1,v2){
         this.adjacencyList[v1].push(v2);
         this.adjacencyList[v2].push(v1);
     }
+    //removing vertex, by filtering array that containing all vertex
     removeEdge(vertex1,vertex2){
         this.adjacencyList[vertex1] = this.adjacencyList[vertex1].filter(
             v => v !==vertex2
@@ -26,23 +28,23 @@ class Graph{
         }
         delete this.adjacencyList[vertex]
     }
-    dfsRecursive(start){
-        let result = [];
-        let visited= {}; 
-        const adjacencyList = this.adjacencyList;
-        (function dfs(vertex){
-            if(!vertex) return null;
-            visited[vertex] = true;
-            result.push(vertex);
-            adjacencyList[vertex].forEach(neighbor => {
-                if(!visited[neighbor]){
-                    return dfs(neighbor)
-                }
-            }) 
-        })(start)
-        return result;
-    }
-
+        dfsRecursive(start){
+            let result = [];
+            let visited= {}; 
+            const adjacencyList = this.adjacencyList;
+            (function dfs(vertex){
+                if(!vertex) return null;
+                visited[vertex] = true;
+                result.push(vertex);
+                adjacencyList[vertex].forEach(neighbor => {
+                    if(!visited[neighbor]){
+                        return dfs(neighbor)
+                    }
+                }) 
+            })(start)
+            return result;
+        }
+        
     bfs(start){
         const queue = [start];
         const result = [];
