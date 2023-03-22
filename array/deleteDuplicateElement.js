@@ -15,6 +15,6 @@ function deleteDuplicateElement(arr){
 
 
 
-const arr = [1,2,4,5,4,4,4,5,6,6,88]
+const arr = [1,2,2,4,5,4,4,4,5,6,6,88]
 
 console.log(deleteDuplicateElement(arr))

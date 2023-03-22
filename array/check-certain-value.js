@@ -10,4 +10,4 @@ function includes(arr,value){
 
 arr = [12,4,5,5,56,5,8]
 
-console.log(includes(arr,7))
+console.log(includes(arr,4))
