@@ -10,8 +10,6 @@ function heapSort(arr){
   return arr;
 }
 
-
-
 function heapify(arr,i,n){
   let largest = i;
   let left  = 2*i+1;
@@ -29,7 +27,6 @@ function heapify(arr,i,n){
   }
 }
 
-
 let arr = [12,45,78,98,64,62,32]
 
-console.log(heapSort(arr))
+console.log(heapSort([1,2,3,4,6,5]))

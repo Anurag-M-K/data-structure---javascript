@@ -1,31 +1,32 @@
-function heapsort(arr){
-    for(let i = Math.floor(arr.length/2); i>0; i--){
-        heapify(arr,i,arr.length)
+function pivot(arr,start = 0 , end = arr.length - 1){
+    const swap = (arr,idx1,idx2)=>{
+        [arr[idx1],arr[idx2]] = [arr[idx2],arr[idx1]]
     }
 
-    for(let i = arr.length-1; i > 0 ; i--){
-        [arr[0],arr[i]] = [arr[i],arr[0]];
-        heapify(arr,0,i)
+    let pivot = arr[start];
+    let swapIdx = start;
+
+    for(let i = start + 1 ; i <=end ; i++){
+        if(pivot > arr[i]){
+            swapIdx++;
+            swap(arr,swapIdx , i);
+        }
     }
-    return arr; 
+
+    swap(arr,start, swapIdx);
+    return swapIdx;
 }
 
-function heapify(arr,i , n){
-    let largest = i;
-    let left = 2*i+1;
-    let right = 2*i+2;
-    if(left < n && arr[left]>arr[largest]){
-        largest = left
+function quicksort(arr,left = 0 , right=arr.length-1){
+    if(left < right){
+        let pivotIdx = pivot(arr,left, right)
+
+        quicksort(arr,left , pivotIdx - 1);
+        quicksort(arr,pivotIdx + 1 , right)
     }
-    if(right < n && arr[right] > arr[largest]){
-        largest = right;
-    }
-    if(largest !==i){
-        [arr[largest],arr[i]] = [arr[i],arr[largest]]
-        heapify(arr,largest,n)
-    }
+    return arr;
 }
 
-let arr = [12,45,78,98,64,62,32]
 
-console.log(heapsort(arr))
+
+console.log(quicksort([12,5,4,7,8,9,6,2]))

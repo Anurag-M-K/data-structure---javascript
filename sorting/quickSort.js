@@ -21,7 +21,6 @@ function pivot(arr, start = 0, end = arr.length - 1) {
     return swapIdx;
   }
   
-  
   function quickSort(arr, left = 0, right = arr.length -1){
       if(left < right){
           let pivotIndex = pivot(arr, left, right) //3
@@ -32,10 +31,12 @@ function pivot(arr, start = 0, end = arr.length - 1) {
         }
        return arr;
   } 
+  let arr =[1,2,3,4,6,5]
+
+
+console.log(quickSort([1,2,3,4,6,5]))
              
-  console.log( quickSort([100,-3,2,4,6,9,0,1.2,1,2,5,3,23]))
-  
-  
+
   
   
   // [4,6,9,1,2,5,3]
