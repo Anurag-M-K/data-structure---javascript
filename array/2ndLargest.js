@@ -12,5 +12,4 @@ function secondLargest (arr){
     }
     return l2;
 }
-let ar = [1,2,4,5,6,8]
-console.log(secondLargest(ar))
+console.log(secondLargest( [1,2,4,5,6,8]))

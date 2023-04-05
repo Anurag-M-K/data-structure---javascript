@@ -19,7 +19,7 @@ class SuffixTree {
         let node = this.root;
         for(let i = 0 ; i<substr.length; i++){
             const char = substr[i];
-            if(!node.children[chat]){
+            if(!node.children[char]){
                 return false;
             }
             node = node.children[char];
@@ -29,7 +29,7 @@ class SuffixTree {
 }
 
 
-let  tree = new SuffixTree('banana');
-console.log(tree.searchSubstr('an')); // true
-console.log(tree.searchSubstr('na')); // true
-console.log(tree.searchSubstr('ananas'))
+let  tree = new SuffixTree('ANURAG');
+// console.log(tree.searchSubstr('an')); // true
+// console.log(tree.searchSubstr('na')); // true
+// console.log(tree.searchSubstr('ananas'))

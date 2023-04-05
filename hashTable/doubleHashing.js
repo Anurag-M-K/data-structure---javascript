@@ -80,4 +80,6 @@ class DoubleHashTable {
   console.log(ht.keyMap); // [[["hello", "world"]], [["hi", "there"]]]
   console.log(ht.get("hello")); // "world"
 
-  
+  //poor cache perfomance 
+  // no clustering
+  //requires more  computation time 

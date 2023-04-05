@@ -10,5 +10,5 @@ function findKthElement(arr,k){
 
 
 
-arr= [1,4,5,7,8,9]
+arr = [1,4,5,7,8,9]
 console.log(findKthElement(arr,2))

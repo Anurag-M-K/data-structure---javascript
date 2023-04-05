@@ -14,11 +14,11 @@ for(let i = 0 ; i <myString.length - subString.length + 1 ; i++){
     }
 }
 
-console.log(isSubstring)
+// console.log(isSubstring)
 
 
-// //// with built in function 
+//  with built in function 
 
-// let text = "hello world"
+let text = "hello world"
 
-// console.log(text.includes("h"))
+console.log(text.includes("z"))

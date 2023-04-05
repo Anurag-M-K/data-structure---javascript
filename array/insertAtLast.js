@@ -12,4 +12,4 @@ function insertAtEnd(arr,value){
 arr = [1,2,5,4,7,8,9];
 insertAtEnd(arr,54)
 
-console.log(insertAtEnd(arr,54))
+console.log(arr)

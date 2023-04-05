@@ -12,3 +12,4 @@ function replace(string,search,replacement){
     }
     return result;
 }
+console.log(replace("hello world","world","bai"))

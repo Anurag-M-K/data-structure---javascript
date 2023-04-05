@@ -11,4 +11,3 @@ function slice(array, start, end) {
 
   console.log(result)
 
-

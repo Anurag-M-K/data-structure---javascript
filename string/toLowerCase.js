@@ -10,7 +10,7 @@ function toLowerCase(string){
     return result;
 }
 
-let string = 'ANURAG MK';
+let string = 'ANuRAG MK';
 let toLowerCaseString = toLowerCase(string);
 console.log(toLowerCaseString)
 
