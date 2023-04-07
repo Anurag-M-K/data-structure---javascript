@@ -1,3 +1,4 @@
+// o(logn)
 function binarySearch(array, element) {//o(logn)
   // First, sort the array in ascending order
   for (let i = 0; i < array.length - 1; i++) {

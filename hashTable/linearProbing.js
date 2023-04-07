@@ -20,7 +20,7 @@ class HashTable {
         this.values[index] = value;
         return;
       }
-      index = (index + 1) % this.size;
+      index = (index + 1) % this.size;  //here the linear 
     }
     this.keys[index] = key;
     this.values[index] = value;

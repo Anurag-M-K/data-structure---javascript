@@ -31,10 +31,10 @@ function pivot(arr, start = 0, end = arr.length - 1) {
         }
        return arr;
   } 
-  let arr =[1,2,3,4,6,5]
+  let arr =[5,7,8,4,1,6,9,77]
 
 
-console.log(quickSort([1,2,3,4,6,5]))
+console.log(quickSort(arr))
              
 
   

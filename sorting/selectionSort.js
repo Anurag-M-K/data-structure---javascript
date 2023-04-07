@@ -1,3 +1,5 @@
+//taking smallest as first element  and iterate through every element finally smallest value assigned to lower.
+//then it swap to first element , which his continously iterate and finally it should be sorted
 function slectionSort(arr){
     for(let i = 0; i<arr.length ; i++){
         let lower = i;

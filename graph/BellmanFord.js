@@ -1,3 +1,6 @@
+//BELMAN FORD ALGORITHM - O(V+E)
+//FLOYD WARSHAL ALGORITHM - O(N^3)
+
 function bellmanFord(graph, start){
     const distance = {};
     const predecessors = {};//predecessors, which is an object containing the predecessor vertex for each vertex on the shortest path from the starting vertex. 

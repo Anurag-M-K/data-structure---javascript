@@ -28,7 +28,7 @@ class HashTable {
       
 
     search(key) {
-        const index = this.hashFunction(key);
+        var index = this.hashFunction(key);
         let i = 1;
         while (this.table[index] !== undefined) {
             if (this.table[index][0] === key) {
@@ -52,7 +52,7 @@ table.insert(44, 'value8');
 
 console.log(table.search(3)); // Output: 'value1'
 console.log(table.search(7)); // Output: 'value2'
-console.log(table.search(4)); // Output: 'value3'
+console.log(table.search(4)); // Output: ''not found
 
 //average cache perfomance
 //suffers a lesser clustering than linear probing

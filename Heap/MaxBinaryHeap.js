@@ -1,3 +1,9 @@
+//insertion o(LOGN)
+//REMOVAL O(LOGN)
+//SEARCH O(N)
+//PRIORITY QUEUE
+//HEAP SORT 
+//GRAPH TRAVERSAL
 class MaxBinaryHeap {
     constructor(){
         this.values = [];

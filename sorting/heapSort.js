@@ -29,4 +29,4 @@ function heapify(arr,i,n){
 
 let arr = [12,45,78,98,64,62,32]
 
-console.log(heapSort([1,2,3,4,6,5]))
+console.log(heapSort(arr))

@@ -2,17 +2,17 @@ class Graph{
     constructor(){
         this.adjacencyList = {};
     }
-    addVertex(vertex){
+    addVertex(vertex){ //o(1)
         if(!this.adjacencyList[vertex]) this.adjacencyList[vertex] = []
 
     }
     //adding a undirected edge between two vertices
-    addEdge(v1,v2){
+    addEdge(v1,v2){ //O(1)
         this.adjacencyList[v1].push(v2);
         this.adjacencyList[v2].push(v1);
     }
     //removing vertex, by filtering array that containing all vertex
-    removeEdge(vertex1,vertex2){
+    removeEdge(vertex1,vertex2){ //O(E)
         this.adjacencyList[vertex1] = this.adjacencyList[vertex1].filter(
             v => v !==vertex2
 
@@ -21,14 +21,14 @@ class Graph{
             v=>v !==vertex1
         );
     }
-    removeVertex(vertex){
+    removeVertex(vertex){ //O(V+E)
         while(this.adjacencyList[vertex].length){
             const adjacentVertex = this.adjacencyList[vertex].pop()
             this.removeEdge(vertex,this.adjacentVertex)
         }
         delete this.adjacencyList[vertex]
     }
-        dfsRecursive(start){
+        dfsRecursive(start){ //O(N)
             let result = [];
             let visited= {}; 
             const adjacencyList = this.adjacencyList;
@@ -45,7 +45,7 @@ class Graph{
             return result;
         }
         
-    bfs(start){
+    bfs(start){ //O(N)
         const queue = [start];
         const result = [];
         const visited = {};

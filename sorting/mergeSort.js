@@ -25,6 +25,7 @@ function mergeSort(array) {
   }
 
 
+  
   const unsortedArray = [5, 3, 8, 4, 2, 7, 1, 6];
 const sortedArray = mergeSort(unsortedArray);
 console.log(sortedArray); // [1, 2, 3, 4, 5, 6, 7, 8]

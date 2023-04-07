@@ -1,3 +1,7 @@
+//insert - o(n)    avg - o(logn)
+//delete - o(n)    avg - o(logn)
+//search -o(n)     avg - o(logn)
+//
 class Node {
   constructor(value) {
     this.value = value;

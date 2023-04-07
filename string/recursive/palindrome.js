@@ -3,13 +3,11 @@ function isPalindrome(str) {
     if (str.length <= 1) {
       return true;
     }
-  
     // recursive case: if the first and last characters of the string are equal,
     // check whether the substring between them is also a palindrome
     if (str[0] === str[str.length - 1]) {
       return isPalindrome(str.slice(1, -1));
     }
-  
     // if the first and last characters are not equal, it's not a palindrome
     return false;
   }

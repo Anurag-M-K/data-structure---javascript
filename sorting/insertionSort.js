@@ -1,3 +1,4 @@
+//take first element as current value  and check the previous elements and find its correct position,
 function insertionSort(arr){
     for(let i = 1; i<arr.length; i++){
         var currentVal = arr[i];
@@ -9,7 +10,7 @@ function insertionSort(arr){
         arr[j+1] = currentVal;
     }
     return arr;
-}
+} 
 
 
 

@@ -1,4 +1,7 @@
-class PriorityQueue {
+//DIJKSTRAS TIME COMPLEXITY - O(V^2)
+//BELMAN FORD ALGORITHM - O(V+E)
+//FLOYD WARSHAL ALGORITHM - O(N^3)
+class PriorityQueue { 
     constructor(){
       this.values = [];
     }
