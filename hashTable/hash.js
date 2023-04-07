@@ -30,7 +30,11 @@
 //         }
 //     }
 // }
-
+        //  avg//   worst
+//search -  o(1)  - o(n)
+// insert -  o(1) - o(n)
+//deltee -  o(1) - o(n)
+//fast retreivel of data, databse indexing, caching
 class HashTable {
     constructor(size = 17) {
       this.keyMap = new Array(size);

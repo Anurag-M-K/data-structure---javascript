@@ -1,7 +1,9 @@
 //insert - o(n)    avg - o(logn)
 //delete - o(n)    avg - o(logn)
 //search -o(n)     avg - o(logn)
-//
+//Database indexing,
+// Auto-complete
+//  File systems
 class Node {
   constructor(value) {
     this.value = value;
